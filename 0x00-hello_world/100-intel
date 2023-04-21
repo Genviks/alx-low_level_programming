@@ -1,2 +1,3 @@
 #!/bin/bash
-gcc -S -masm=intel $CFILE
+gcc -Wall -Werror -Wextra -pedantic $CFILE -o my_program
+./my_program
