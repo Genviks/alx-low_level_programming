@@ -5,9 +5,9 @@
  *
  * Return: Return (0) on Success
  */
-int main (void)
+int main(void)
 {
-	char lowercase = 'a''
+	char lowercase = 'a';
 	char uppercase = 'A';
 
 	while (lowercase <= 'z')
