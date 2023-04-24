@@ -3,18 +3,18 @@
 /**
  * main - main function
  *
- * Return: Return(0) on success
+ * Return: Return (0) on success
  */
 int main(void)
 {
-	int s = 97, e = 122;
-	while (s <= e)
-	l{
-		putchar(s);
-		s++;
+	char i;
+
+	for (i = 'a'; i <= 'z'; i++)
+	{
+	putchar(i);
 	}
 
 	putchar('\n');
 
-	return (0)
+	return (0);
 }
