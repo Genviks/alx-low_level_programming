@@ -1,12 +1,15 @@
 #include <stdio.h>
 /**
- * main - main functions
+ * main - main function
  *
  * Return: Return (0) on success
  */
-def main(void);
-	for i in range(10);
-	print(i)
+int main(void);
+{
+	int i;
 
-	if _ _name_ _ == '_ _main_ _';
-	main()
+	for (i = 0; i < 10; i++)
+		printf("%d\n", i);
+
+	return (0);
+}
