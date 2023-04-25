@@ -5,7 +5,8 @@
  *
  * Return: Return (0) on success
  */
-int main(void);
+int main(void)
+
 {
 	int s = 0, e = 9;
 
