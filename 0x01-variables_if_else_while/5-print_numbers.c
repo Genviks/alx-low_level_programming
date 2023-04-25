@@ -1,4 +1,5 @@
 #include <stdio.h>
+
 /**
  * main - main function
  *
@@ -6,10 +7,14 @@
  */
 int main(void);
 {
-	int i;
+	int s = 0, e = 9;
 
-	for (i = 0; i < 10; i++)
-		printf("%d\n", i);
+	while (s <= e)
+	{
+		putchar(s + '0');
+		s++;
+	}
+	putchar('\n');
 
 	return (0);
 }
