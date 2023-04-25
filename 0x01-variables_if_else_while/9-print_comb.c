@@ -1,23 +1,26 @@
 #include <stdio.h>
-#include <stdlib.h>
-#include <time.h>
 
 /**
  * main - main function
  *
- * Retutn: Return (0) on success
+ * Return: Return (0) on success
  */
 
 int main(void)
-
 {
 	int d;
 
 	for (d = '0'; d <= '9'; d++)
 	{
-	putchar(',');
-	putchar(',');
+
+	putchar(d);
+	if (d != '9')
+	{
+		putchar(',');
+		putchar(' ');
+
 	}
+
 	}
 	putchar('\n');
 
