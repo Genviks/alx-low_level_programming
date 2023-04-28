@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 /**
- * main - Prints the fifrst 98 Fibonacci  numbers, starting with
+ * main - Prints the frst 100 Fibonacci  numbers, starting with
  * 1 and 2, separated by a comma followed by a space.
  * Return: Always 0
  */
@@ -25,7 +25,7 @@ int main(void)
 	fib2_half1 = fib2 / 10000000000;
 	fib1_half2 = fib1 % 10000000000;
 	fib2_half2 = fib2 % 10000000000;
-	for (count = 93; count < 100; count++)
+	for (count = 93; count < 101; count++)
 	{
 	half1 = fib1_half1 + fib2_half1;
 	half2 = fib1_half2 + fib2_half2;
@@ -34,9 +34,9 @@ int main(void)
 	half1 += 1;
 	half2 %= 10000000000;
 	}
-	printf("%lu%lu", half1, half2);
-	if (count != 99)
-	printf(" , ");
+	printf("%lu%010lu", half1, half2);
+	if (count != 100)
+	printf(", ");
 	fib1_half1 = fib2_half1;
 	fib1_half2 = fib2_half2;
 	fib2_half1 = half1;
