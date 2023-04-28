@@ -15,11 +15,13 @@ int main(void)
 
 	for (i = 3; i <= 98; i++)
 	{
+		
 	c = a + b;
 	printf(", %d", c);
 	a = b;
 	b = c;
 	}
+
 	printf("\n");
 	return (0);
 }
