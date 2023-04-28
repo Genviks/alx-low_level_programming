@@ -4,7 +4,6 @@ int main(void)
 {
 	unsigned int i;
 	unsigned long int a = 1, b = 2, c;
-		
 	printf("%lu, %lu", a, b);
 
 	for (i = 3; i <= 98; ++i)
@@ -15,5 +14,5 @@ int main(void)
 	b = c;
 	}
 	 printf("\n");
-	return 0;
+	return (0);
 }
