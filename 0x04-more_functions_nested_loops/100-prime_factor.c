@@ -8,50 +8,24 @@
 
 int main(void)
 {
-    long x, maxf, factor;
-    long number = 612852475143;
-    double square = sqrt(number);
-    maxf = 1;
+	long int number = 612852475143;
+	long int i;
 
-    for (x = 2; x <= square; x++)
-    {
-        if (number % x == 0)
-        {
-            factor = number / x;
-            int is_prime = 1;
-            for (int i = 2; i <= sqrt(x); i++)
-            {
-                if (x % i == 0)
-                {
-                    is_prime = 0;
-                    break;
-                }
-            }
-            if (is_prime && x > maxf)
-            {
-                maxf = x;
-            }
-            is_prime = 1;
-            for (int i = 2; i <= sqrt(factor); i++)
-            {
-                if (factor % i == 0)
-                {
-                    is_prime = 0;
-                    break;
-                }
-            }
-            if (is_prime && factor > maxf)
-            {
-                maxf = factor;
-            }
-        }
-    }
-    // Handle the case where the input number is a prime number
-    if (maxf == 1)
-    {
-        maxf = number;
-    }
-    printf("%ld", maxf);
+	while (number % 2 == 0)
+	{
+	number /= 2;
+	i = 2;
+	}
 
-    return (0);
+	for (i = 3; i <= sqrt(number); i += 2)
+	{
+	while (number % i == 0 && i < number)
+	}
+	number /= i;
+	}
+	}
+
+	printf("%ld\n", number);
+
+	return (0);
 }
