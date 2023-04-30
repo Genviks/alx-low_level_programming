@@ -7,25 +7,19 @@
  */
 
 int main(void)
+
 {
-	long int number = 612852475143;
-	long int i;
+	long x, maxf;
+	long number = 612852475143;
+	double square = sqrt(number);
 
-	while (number % 2 == 0)
+	for (x = 1; x <= square; x++)
 	{
-	number /= 2;
-	i = 2;
+		if (number % x == 0)
+		{
+			maxf = number / x;
+		}
 	}
-
-	for (i = 3; i <= sqrt(number); i += 2)
-	{
-	while (number % i == 0 && i < number)
-	}
-	number /= i;
-	}
-	}
-
-	printf("%ld\n", number);
-
+	printf("%ld\n", maxf);
 	return (0);
 }
