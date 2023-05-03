@@ -7,7 +7,6 @@
  * Return: Print
  */
 void puts2(char *str);
-
 {
 	int longi = 0;
 	int t = 0;
