@@ -48,6 +48,6 @@ int main(void)
 	}
 	}
 
-	printf("%s\n", password)
+	printf("%s\n", password);
 		return (0);
 }
