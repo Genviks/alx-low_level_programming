@@ -4,7 +4,7 @@
 /**
  * main - Prints the number of arguements passed into it
  * @argc: arguement count
- * @argc: arguement vector
+ * @argv: arguement vector
  *
  * Return: Always zero
  */
