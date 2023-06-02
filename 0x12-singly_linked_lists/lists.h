@@ -1,5 +1,5 @@
-#ifndef LINKED
-#define LINKED
+#ifndef LISTS_H
+#define LISTS_H
 
 #include <stddef.h>
 #include <stdlib.h>
@@ -7,10 +7,10 @@
 #include <unistd.h>
 
 /**
- * struct list_s - singly linked
+ * struct list_s - singly linked list
  * @str: String - (malloc'd string)
  * @len: the length of the string
- * @next:cpoints to the next node
+ * @next: points to the next node
  *
  * Description: the singly linked list node structure
  */
@@ -18,7 +18,7 @@ typedef struct list_s
 {
 	char *str;
 	unsigned int len;
-	struct list_s *Next;
+	struct list_s *next;
 } list_t;
 
 int _putchar(char c);
