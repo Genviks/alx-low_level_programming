@@ -14,11 +14,11 @@ size_t print_list(const list_t *h)
 	while (h != NULL)
 	{
 		if (h->str == NULL)
-		_puts("[0] (nil)");
+		puts("[0] (nil)");
 		else
-			_puts(h->str);
+			puts(h->str);
 
-		_putchar('\n');
+		putchar('\n');
 		nodes++;
 		h = h->next;
 	}
