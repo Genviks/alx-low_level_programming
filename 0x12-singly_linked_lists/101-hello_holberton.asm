@@ -12,7 +12,6 @@ mov rbp, rsp
 
 ; Pass format string address as argument to printf
 mov edi, format
-xor eax, eax
 xor eax, eax ; Clear eax register (optional)
 call printf
 
@@ -21,5 +20,5 @@ mov rsp, rbp
 pop rbp
 
 ; Exit program
-mov eax, 0
+xor eax, eax
 ret
